@@ -1,5 +1,5 @@
 import {
-  BrowserRouter,
+  HashRouter,
   Navigate,
   Route,
   Routes,
@@ -12,7 +12,7 @@ import PostDetail from './pages/PostDetail'
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <MainLayout>
         <Routes>
           <Route path="/" element={<Dashboard />} />
@@ -25,7 +25,7 @@ function App() {
           />
         </Routes>
       </MainLayout>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
